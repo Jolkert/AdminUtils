@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "admin-utils",
+	"version": "${version}",
+	"name": "AdminUtils",
+	"description": "Basic utilities for server admins",
+	"authors": [
+		"Jolkert"
+	],
+	"contact": {
+		"website": "jolkert.github.io",
+		"repo": "https://github.com/Jolkert/AdminUtils"
+	},
+	"license": "MIT",
+	"icon": "assets/admin-utils/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"io.github.jolkert.adminutils.AdminUtils"
+		]
+	},
+	"mixins": [
+		"admin-utils.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric": "*",
+		"minecraft": "${minecraft_version}"
+	}
+}
